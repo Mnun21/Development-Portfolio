@@ -15,52 +15,45 @@
   -webkit-padding-start: 0px;
   -webkit-padding-end: 0px;
 }
-
 body {
   font-size: 30px;
-  font-family: 'Palatino', serif;
+  font-family: 'Poppins', sans-serif;
+  
 }
-
+.background {
+ background-color: none;
+}
 nav {
   position: fixed;
   width: 100%;
-  background-color: #001866;
+  background-color: #000000;
   padding: 15px;
   top: 0;
   z-index: 1000;
-}
 
-nav ul {
-  display: inline-block;
 }
-
 nav ul {
   float: right;
   list-style: none;
 }
-
 nav li {
   display: inline-block;
   padding-right: 15px;
   padding-top: 10px;
   font-size: 1rem;
 }
-
 nav li a {
   text-decoration: none;
   color: white;
 }
-
 nav li a:hover {
-  border-bottom: 2px solid #fb8c32;
+  border-bottom: 2px solid #ff34d2;
 }
-
-
 nav h1 {
   text-align: left;
   color: white;
   font-size: 2rem;
-  font-family: 'Palatino', sans-serif;
+  font-family: 'Poppins', sans-serif;
   position: left;
   bottom: 1rem;
   right: 1rem;
@@ -74,97 +67,76 @@ section {
   padding-bottom: 6rem;
   width: 100%;
   font-size: 1rem;
+  height: 100vh;
+  
 }
-
-section.about-me img {
-  float: right;
-  padding-bottom: 30px;
-}
-
-section.skills {
-  background-color: #f4f3f5e7;
-}
-
 .section-container {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
   clear: both;
-  display: block;
   height: auto;
+  background-color: none;
 }
-
-.section-container:after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-section h3 {
-  font-family: 'Palatino', sans-serif;
-  color: #323ffb;
+section h3, p {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
   font-size: 1.4rem;
   margin-bottom: 30px;
+  
 }
-
-section p {
-  padding-top: 10px;
-  font-size: 1rem;
-  padding-bottom: 20px;
-  margin-right: 400px;
+a:link {
+  color: #5b9dff ;
+  background-color: none;
+  text-decoration: none;
 }
+a:active {
+  color: #ff34d2;
+  background-color: none;
+  text-decoration: none;
+}
+.banner {
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(
+    to bottom right,
+    #26c7a9 0%, #5b9dff 40%, #d06bff 60%, #ff34d2 100%
+  );
 
-section.skills .skills-container {
-  width: 100%;
-  background-color: #FFFFFF;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  background-size: 200% 200%;
+  animation: movingGradient 5s linear infinite alternate;
+}
+.banner p {
+
   text-align: center;
-}
 
-section.skills .skills-container img {
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  padding-bottom: 1rem;
 }
+.skills {
+  background-color: #5b9dff;
 
-section.projects .project-container {
-  background-color: #F4F3F5;
-  margin-bottom: 15px;
-  padding: 15px;
 }
-
-section.contact {
-  background-color: #F4F3F5;
+.servicenow-logo {
+  margin-left: 100px;
 }
-
-section.contact h3 {
+.projects {
+  background-color: #5b9dff;
+  display: flex;
+  flex-direction: row;
   text-align: center;
-  color: black;
+
 }
-
-section.contact ul {
-  text-align: center;
+.project-item h3 {
+ text-decoration: underline;
 }
-
-section.contact li {
-  display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
+.contact {
+  background-color: #5b9dff;
 }
-
-section.contact li a {
-  font-weight: 1000;
-  color: #05010e;
+.form-input, .contact-icons{
+  
+  display: grid;
+  place-items: center;
 }
-
-section.contact li a:link {color: blue;}
-section.contact li a:hover {color: blueviolet;}
-section.contact li a:hover { text-decoration: solid;}
-
 footer {
   text-align: center;
   background-color: #060731;
@@ -173,4 +145,67 @@ footer {
   clear: both;
   font-size: .8rem;
   padding: 10px;
+}
+#contact form {
+  width:100%;
+}
+#contact form input {
+  width:96%;
+  margin:20px 1%;
+  background:transparent;
+  border:0px;
+  border-bottom:3px solid rgba(255, 44, 90,0.5);
+  padding:8px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size:18px;
+  transition:0.4s ease-in-out;
+  color:#000;
+  font-weight:bold;
+}
+#contact form textarea {
+  width:96%;
+  margin:20px 1%;
+  padding:8px 10px;
+  border:0px;
+  border-bottom:3px solid rgba(255, 44, 90,0.5);
+  padding:8px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size:18px;
+  background:transparent;
+  resize:none;
+  transition:0.4s ease-in-out;
+  color:#000;
+  font-weight:bold;
+}
+#contact form input:focus {
+  outline:none;
+  border-bottom:3px solid rgba(255, 44, 90,1);
+}
+#contact form textarea:focus {
+  outline:none;
+  border-bottom:3px solid rgba(255, 44, 90,1);
+}
+.send-button {
+  background-color: rgba(255, 44, 90,0.5);
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 600;
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 55px;
+  width: 130px;
+}
+.send-button:hover {
+  background-color: rgba(255, 44, 90);
+}
+.fa-linkedin:hover, .fa-github-square:hover{
+  color: rgb(255, 44, 90);
+}
+@keyframes movingGradient {
+  from { background-position: 0 0; }
+  to   { background-position: 100% 100%; }
 }
