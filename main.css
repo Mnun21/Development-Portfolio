@@ -60,15 +60,8 @@ nav h1 {
 }
 
 section {
-  display: block;
-  clear: both;
   background-color: #FFFFFF;
-  padding-top: 8rem;
-  padding-bottom: 6rem;
-  width: 100%;
   font-size: 1rem;
-  height: 100vh;
-  
 }
 .section-container {
   width: 90%;
