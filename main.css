@@ -59,17 +59,9 @@ nav h1 {
   right: 1rem;
 }
 
-section {
-  background-color: #FFFFFF;
-  font-size: 1rem;
-}
 .section-container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  clear: both;
-  height: auto;
   background-color: none;
+
 }
 section h3, p {
   text-align: center;
@@ -90,6 +82,7 @@ a:active {
   text-decoration: none;
 }
 .banner {
+  height: 100vh;
   display: grid;
   place-items: center;
   background-image: linear-gradient(
