@@ -102,6 +102,10 @@ a:active {
   display: flex;
   flex-direction: column;
 }
+.logo:hover {
+  border-style: solid;
+  border-color: whitesmoke;
+}
 .servicenow-logo {
   margin-left: 100px;
 }
