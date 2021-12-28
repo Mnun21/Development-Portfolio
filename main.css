@@ -115,6 +115,12 @@ a:active {
   flex-direction: row;
   text-align: center;
 }
+
+.fa-laptop-code:active {
+  color: #ff34d2;
+  background-color: none;
+  text-decoration: none;
+}
 .project-item h3 {
  text-decoration: underline;
  margin-bottom: 0px;
@@ -191,7 +197,7 @@ footer {
 .send-button:hover {
   background-color: rgba(255, 44, 90);
 }
-.fa-linkedin:hover, .fa-github-square:hover{
+.fa-laptop-code:hover, .fa-file-code:hover, .fa-linkedin:hover, .fa-github-square:hover{
   color: rgb(255, 44, 90);
 }
 @keyframes movingGradient {
