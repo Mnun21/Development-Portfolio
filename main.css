@@ -197,6 +197,9 @@ footer {
 .send-button:hover {
   background-color: rgba(255, 44, 90);
 }
+.fa-laptop-code, .fa-file-code, .fa-linkedin, .fa-github-square {
+  color: #7a0dad;
+}
 .fa-laptop-code:hover, .fa-file-code:hover, .fa-linkedin:hover, .fa-github-square:hover{
   color: rgb(255, 44, 90);
 }
