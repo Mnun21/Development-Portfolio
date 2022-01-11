@@ -59,7 +59,7 @@ nav h1 {
 .section-container {
   background-color: none;
 }
-section h3, p {
+section h2, section h3, section h4, section h5, section h6, p {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   color: #000000;
